@@ -7,5 +7,4 @@ router.delete('/:id', postsCtrl.deletePost)
 router.patch('/:id', postsCtrl.updatePost)
 router.get('/all', postsCtrl.indexPost)
 router.get("/:userId", postsCtrl.indexMyPosts)
-
 module.exports = router

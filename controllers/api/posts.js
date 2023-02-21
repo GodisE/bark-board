@@ -51,6 +51,7 @@ function updatePost (req, res, next) {
 }
 
 function indexMyPosts(req, res, next) {
+    console.log(req)
     const user = req.user._id
     Post.find( { "owner": user } )
         .populate("owner")

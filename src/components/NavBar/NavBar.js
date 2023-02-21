@@ -12,11 +12,13 @@ export default function NavBar({ user, setUser }) {
         userService.logOut()
         setUser(null)
     }
+    // 
     return (
         <>
         <nav className='nav navbar navbar-static-top d-flex' role='navigation'>
             <div className='logo justify-content-start'>
-                <div className= 'nav-link text-white' id='logo-name'>BarkBoard</div>
+                <div><Link className= 'nav-link text-white' id='logo-name' to='/posts'>  BarkBoard</Link>
+                </div>
                 <img src={Pawprint} alt='pawprint'/>
             </div>
             <div className='menu-container justify-content-end'>

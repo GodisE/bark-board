@@ -49,7 +49,6 @@ export function update(data, id) {
 }
 
 export function indexMyBoard(userId){
-    console.log(userId)
     const token = getToken()
     return fetch(`/api/myboard/${userId}`, {
         method:"GET",
@@ -58,3 +57,4 @@ export function indexMyBoard(userId){
         }
     })
 }
+
